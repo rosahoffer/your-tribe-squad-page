@@ -3,26 +3,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background-color: #fff;
-  font-family: 'montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 17px;
-  text-align: center;
-  justify-content: flex-end;
-  flex-direction: column;
 }
 
 header{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
 }
 
-.strepje{
+.logo{
+  width: 10rem;
+  margin: auto;
+}
+
+.streepje{
   width: 40vw;
   margin: auto;
   height: 4px;
@@ -33,19 +35,15 @@ header{
   margin: 10px auto;
 }
 
-
 .puzzle{
   margin-top: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-
-.logo{
-  width: 10rem;
-  margin: auto;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: center;
 }
 
 .puzzle > div > img{
@@ -53,16 +51,16 @@ header{
   height: 200px;
 }
 
-.puzzle > div:hover {
-  border: 10px solid black;
-}
-
 .puzzle > div{
   width: 200px;
   height: 200px;
-  border: 5px solid black;
   background: white;
-  
+  border: 3px solid black;
+  transition: 0.2s ease-out;
 }
 
+.puzzle > div:hover{
+ transform:scale(1.5);
+ box-shadow: 2px 2px 2px gray;
+}
 
