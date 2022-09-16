@@ -1,1 +1,9 @@
-> Fork deze leertaak en ga aan de slag, de instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Read me squadpagina visite kaartjes
+
+## Inhoudsopgave🧾
+* Beschrijving
+* Voorbeeld video
+* Voorbeeld homepage
+* Gebruikte tools
+
+
