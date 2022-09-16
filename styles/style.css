@@ -3,54 +3,23 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow: hidden
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: #fff;
+}
+
+header{
   font-family: 'montserrat', sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-
-}
-
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.strepje{
-  width: 40vw;
-  margin: auto;
-  height: 4px;
-  color: black;
-  background-color: black;
-  border: none;
-  border-radius: 5px;
-  margin: 10px auto;
-}
-
-.puzzle{
-  background-color: black;
-  height: 75vh;
-  width: 100vw;
-  margin-top: 5vh;
 }
 
 .logo{
-  width: 10rem;
-  margin: auto;
-
+  width: 20rem;
 }
+
 
 .gallery {
   --s: 200px; /* control the size */
@@ -99,7 +68,42 @@ header{
     radial-gradient(calc(var(--r) + var(--g)) at calc(0% - var(--g)) 50%,#0000 95%,#000) 
       bottom/100% calc(100% - var(--r)) no-repeat, 
     radial-gradient(var(--r) at left 50% top var(--r),#000 95%,#0000);
+  }
+/*
+.puzzle{
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: center;
 }
+
+.puzzle > div > img{
+  width: 13rem;
+  height: 13rem;
+}
+
+.puzzle > div > a > img{
+  width: 13rem;
+  height: 13rem;
+}
+
+.puzzle > div{
+  width: 13rem;
+  height: 13rem;
+  background: white;
+  border: 3px solid black;
+  transition: 0.2s ease-out;
+}
+
+.puzzle > div:hover{
+ transform:scale(1.5);
+ box-shadow: 2px 2px 2px gray;
+}
+*/
 
 .gallery > img:hover{
 background-color: aqua;
