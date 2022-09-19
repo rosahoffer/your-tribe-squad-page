@@ -22,6 +22,7 @@ header{
 
 .puzzle{
   margin-top: 70px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,31 +32,27 @@ header{
   justify-content: center;
 }
 
-.puzzle > div > img{
-  width: 13rem;
-  height: 13rem;
-}
-
 .puzzle > div > a > img{
   width: 15rem;
-  height: 13rem;
+  height: 15rem;
   filter: grayscale(100%);
   transition: 0.5s;
 }
 
 .puzzle > div{
   width: 15rem;
-  height: 13rem;
+  height: 15rem;
   background: white;
   border: 3px solid black;
   transition: 0.5s;
+  
 }
 
 .puzzle > div:hover{
  transform:scale(1.5);
  box-shadow: 2px 2px 2px gray;
  filter: grayscale(0%);
- z-index: 1;
+ z-index: 1;  
 }
 
 .puzzle > div> a > img:hover{
