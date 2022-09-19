@@ -20,8 +20,6 @@ header{
   width: 20rem;
 }
 
-<<<<<<< Updated upstream
-=======
 
 .gallery {
   --s: 200px; /* control the size */
@@ -71,8 +69,7 @@ header{
       bottom/100% calc(100% - var(--r)) no-repeat, 
     radial-gradient(var(--r) at left 50% top var(--r),#000 95%,#0000);
   }
-/*
->>>>>>> Stashed changes
+
 .puzzle{
   margin-top: 70px;
   margin-bottom: 70px;
