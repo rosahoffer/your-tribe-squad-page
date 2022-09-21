@@ -8,6 +8,17 @@ body {
   background-color: #fff;
 }
 
+<<<<<<< Updated upstream
+=======
+a{
+  color: #fff;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+>>>>>>> Stashed changes
 header{
   font-family: 'montserrat', sans-serif;
   font-weight: 700;
@@ -100,8 +111,34 @@ pattern #pattern{
  box-shadow: 2px 2px 2px gray;
  filter: grayscale(0%);
  z-index: 1;  
+<<<<<<< Updated upstream
 } 
 .rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
+=======
+}
+/*
+@keyframes animate {
+0% {
+  opacity: 0;
+  z-index: 0;
+  transform:scale(0);
+
+}
+100% {
+  opacity: 1;
+  z-index: 1;  
+  transform:scale(1.5);
+}
+1% {
+  opacity: 1;
+  z-index: 1;
+  transform:scale(0);
+}
+}*/
+
+
+.puzzle > div> a > img:hover{
+>>>>>>> Stashed changes
   filter: grayscale(0);
 }
 
