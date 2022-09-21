@@ -9,6 +9,15 @@ body {
 
 }
 
+<<<<<<< Updated upstream
+a{
+  color: #fff;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  text-decoration: none;
+}
+
 header{
   font-family: 'montserrat', sans-serif;
   font-weight: 700;
@@ -103,7 +112,45 @@ pattern #pattern{
 }
 /* .rij1_1, .rij1_2, .rij1_4{
   border: 3px solid #000;
+<<<<<<< HEAD
 } */
+=======
+}
+
+.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
+ transform:scale(1.5);
+ box-shadow: 2px 2px 2px gray;
+ filter: grayscale(0%);
+ z-index: 1;  
+} 
+.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
+}
+/*
+@keyframes animate {
+0% {
+  opacity: 0;
+  z-index: 0;
+  transform:scale(0);
+
+}
+100% {
+  opacity: 1;
+  z-index: 1;  
+  transform:scale(1.5);
+}
+1% {
+  opacity: 1;
+  z-index: 1;
+  transform:scale(0);
+}
+}*/
+
+
+.puzzle > div> a > img:hover{
+>>>>>>> Stashed changes
+  filter: grayscale(0);
+}
+>>>>>>> 2c9026b2ced23b6165edb75388d4a16ce4859d20
 
 @media (max-width:600px) {
   .gallery{
