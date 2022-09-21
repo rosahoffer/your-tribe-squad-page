@@ -9,7 +9,6 @@ body {
 }
 
 <<<<<<< Updated upstream
-=======
 a{
   color: #fff;
   font-family: 'montserrat', sans-serif;
@@ -18,7 +17,6 @@ a{
   text-decoration: none;
 }
 
->>>>>>> Stashed changes
 header{
   font-family: 'montserrat', sans-serif;
   font-weight: 700;
@@ -111,10 +109,8 @@ pattern #pattern{
  box-shadow: 2px 2px 2px gray;
  filter: grayscale(0%);
  z-index: 1;  
-<<<<<<< Updated upstream
 } 
 .rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
-=======
 }
 /*
 @keyframes animate {
