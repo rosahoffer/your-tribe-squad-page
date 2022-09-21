@@ -1,49 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow: hidden
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   background-color: #fff;
+}
+
+header{
   font-family: 'montserrat', sans-serif;
   font-weight: 700;
   font-size: 17px;
   text-align: center;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-
 }
 
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.logo{
+  width: 20rem;
 }
-
-.strepje{
-  width: 40vw;
-  margin: auto;
-  height: 4px;
-  color: black;
-  background-color: black;
-  border: none;
-  border-radius: 5px;
-  margin: 10px auto;
-}
-
 .puzzle{
-  background-color: black;
-  height: 75vh;
-  width: 100vw;
-  margin-top: 5vh;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  justify-content: center;
 }
 
 .logo{
@@ -51,5 +35,90 @@ header{
   margin: auto;
 
 }
+pattern #pattern{
+  background-image: url(../docs/breakdownschets.jpeg);
+  z-index: 999;
+}
 
+
+/* puzzle */
+.gallery {
+  --s: 200px; /* control the size */
+  --g: 6px;   /* control the gap */
+  --r: 42px;  /* control the circular shapes */
+  background-color: transparent;
+  display: grid;
+  gap: var(--g);
+  grid: auto-flow var(--s)/repeat(5,var(--s));
+}
+.gallery > a, .rij1_1, .rij1_2, .rij1_4 {
+  --_m: var(--rg3);
+  object-fit: cover;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+         
+}
+.gallery > a > .rij1_1 {
+  height: calc(100% + var(--r));
+  --_m: 
+    radial-gradient(calc(var(--r) + var(--g)) at calc(100% + var(--g)) 50%,#0000 95%,#000) 
+      top/100% calc(100% - var(--r)) no-repeat, 
+    radial-gradient(var(--r) at left 124% bottom var(--r),#000 95%,#0000);
+    
+    
+}
+.gallery >  a > .rij1_2 {
+  height: 100%;
+  width: calc(100% + var(--r));
+  place-self: end;
+  --_m: 
+    radial-gradient(calc(var(--r) + var(--g)) at 103% calc(61% - var(--r)/2),#0000 95%,#000) 
+      right/calc(100% - var(--r)) 100% no-repeat, 
+    radial-gradient(var(--r) at top 50% left var(--r),#000 95%,#0000);
+    
+}
+.gallery >  a > .rij1_3 {
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at 50% calc(0% - var(--g)),#0000 95%,#000) left/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at top 54% right var(--r),#000 95%,#0000);
+    transform: rotate(180deg);
+    margin-left: -2.4em;
+}
+.gallery > a > .rij1_4 {
+  height: 100%;
+  width: calc(100% + var(--r));
+  place-self: end;
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at 124% calc(116% - var(--r)/2),#0000 95%,#000)
+   right/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at 
+   top 50% left var(--r),#000 95%,#0000)
+}
+.rij1_1, .rij1_2, .rij1_4{
+  border: 3px solid #000;
+}
+
+.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
+ transform:scale(1.5);
+ box-shadow: 2px 2px 2px gray;
+ filter: grayscale(0%);
+ z-index: 1;  
+} 
+.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
+  filter: grayscale(0);
+}
+
+@media (max-width:600px) {
+  .gallery{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: center;
+  }
+ .card{
+    margin: 1em;
+    box-shadow: 2px 6px 6px grey;
+  }
+}
 
