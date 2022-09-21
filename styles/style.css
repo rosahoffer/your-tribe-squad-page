@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #000;
+
 }
 
 header{
@@ -13,6 +14,7 @@ header{
   font-weight: 700;
   font-size: 17px;
   text-align: center;
+  background-color: white;
 }
 
 .logo{
@@ -20,13 +22,10 @@ header{
 }
 
 .puzzle{
-  margin-top: 70px;
+
+  margin-top: 100px;
   margin-bottom: 70px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 80%;
-  margin-right: 10%;
   margin-left: 10%;
   justify-content: center;
 }
@@ -51,7 +50,20 @@ pattern #pattern{
   display: grid;
   gap: var(--g);
   grid: auto-flow var(--s)/repeat(5,var(--s));
+  margin-bottom: 4.9px;
 }
+
+.gallery > a{
+  filter: grayscale(100);
+}
+
+.gallery > a:hover{
+  filter: grayscale(0);
+    transform: scale(1.3);
+    z-index: 1;
+
+}
+
 .gallery > a, .rij1_1, .rij1_2, .rij1_4 {
   --_m: var(--rg3);
   object-fit: cover;
@@ -63,9 +75,7 @@ pattern #pattern{
   height: calc(100% + var(--r));
   --_m: 
     radial-gradient(calc(var(--r) + var(--g)) at calc(100% + var(--g)) 50%,#0000 95%,#000) 
-      top/100% calc(100% - var(--r)) no-repeat, 
-    radial-gradient(var(--r) at left 124% bottom var(--r),#000 95%,#0000);
-    
+      top/100% calc(100% - var(--r)) no-repeat
     
 }
 .gallery >  a > .rij1_2 {
@@ -91,19 +101,9 @@ pattern #pattern{
    right/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at 
    top 50% left var(--r),#000 95%,#0000)
 }
-.rij1_1, .rij1_2, .rij1_4{
+/* .rij1_1, .rij1_2, .rij1_4{
   border: 3px solid #000;
-}
-
-.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
- transform:scale(1.5);
- box-shadow: 2px 2px 2px gray;
- filter: grayscale(0%);
- z-index: 1;  
-} 
-.rij1_1:hover, .rij1_2:hover, .rij1_4:hover{
-  filter: grayscale(0);
-}
+} */
 
 @media (max-width:600px) {
   .gallery{
