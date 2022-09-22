@@ -5,5 +5,11 @@
 * Voorbeeld video
 * Voorbeeld homepage
 * Gebruikte tools
+##Beschrijving
+## homepage/responsive afbeeldingen
+## Gebruikte tools
+* HTML
+* CSS
+* Ilustrator
 
 
