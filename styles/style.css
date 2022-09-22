@@ -21,6 +21,7 @@ header{
   text-align: center;
   color: white;
   width: 15em;
+  margin-top: 1.7em;
 }
 
 .puzzle{
@@ -91,3 +92,72 @@ header{
    right/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at 
    top 50% left var(--r),#000 95%,#0000)
 }
+footer{
+  color: white;
+  text-align: center;
+  padding: 2em 0em;
+  font-size: 17px;
+}
+@media screen and (max-width: 860px) {
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .gallery > a > .rij1_1{
+    height: 100%;
+    width: calc(100% + var(--r));
+    place-self: end;
+    --_m: 
+      radial-gradient(calc(var(--r) + var(--g)) at 103% calc(61% - var(--r)/2),#0000 95%,#000) 
+        right/calc(100% - var(--r)) 100% no-repeat, 
+      radial-gradient(var(--r) at top 50% left var(--r),#000 95%,#0000);
+      margin-left: -2em;
+  }
+  .gallery > a > .rij1_2{
+    margin-left: -2em;
+  }
+  .gallery > a > .rij1_4{
+    height: 100%;
+    width: calc(100% + var(--r));
+    place-self: end;
+    --_m: 
+      radial-gradient(calc(var(--r) + var(--g)) at 103% calc(61% - var(--r)/2),#0000 95%,#000) 
+        right/calc(100% - var(--r)) 100% no-repeat, 
+      radial-gradient(var(--r) at top 50% left var(--r),#000 95%,#0000);
+      margin-left: -2em;
+  }
+  }
+  @media only screen and (max-width: 480px){
+    header p, footer{
+      padding: 0em 3em;
+    }
+    .gallery > a > .rij1_1{
+      height: 100%;
+      width: calc(70% + var(--r));
+      place-self: end;
+      --_m: 
+        radial-gradient(calc(var(--r) + var(--g)) at 103% calc(61% - var(--r)/2),#0000 95%,#000) 
+          right/calc(100% - var(--r)) 100% no-repeat, 
+        radial-gradient(var(--r) at top 50% left var(--r),#000 95%,#0000);
+        margin-left: 1em;
+    }
+    .gallery > a > .rij1_2{
+      height: 100%;
+      width: calc(70% + var(--r));
+      margin-left: 1em;
+    }
+    .gallery > a > .rij1_4{
+      height: 100%;
+      width: calc(70% + var(--r));
+      place-self: end;
+      --_m: 
+        radial-gradient(calc(var(--r) + var(--g)) at 103% calc(61% - var(--r)/2),#0000 95%,#000) 
+          right/calc(100% - var(--r)) 100% no-repeat, 
+        radial-gradient(var(--r) at top 50% left var(--r),#000 95%,#0000);
+        margin-left: 1em;
+    }
+  }
