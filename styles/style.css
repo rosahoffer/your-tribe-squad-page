@@ -47,6 +47,7 @@ header{
 
 .gallery > a{
   filter: grayscale(100);
+  transition: .5s;
 }
 
 .gallery > a:hover{
